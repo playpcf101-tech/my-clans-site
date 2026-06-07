@@ -5,7 +5,7 @@ import time
 # Basic Configuration
 st.set_page_config(page_title="TopReqClans Global", layout="wide", initial_sidebar_state="collapsed")
 
-API_KEY = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjYxOTc2MjA3LTM1NWEtNDUyMC05MzcxLTY4N2Q4MTQ2YmZjNyIsImlhdCI6MTc4MDg0NDUxNSwic3ViIjoiZGV2ZWxvcGVyLzQ2NTM5OTQ5LTg3OTMtOTM4Mi00N2E4LTg4MGI3OWNjYzM5ZiIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjQ1Ljc5LjIxOC43OSJdLCJ0eXBlIjoiY2xpZW50In1dfQ.Heh62sYoBk_0kJKenK8Y_GwLyw1W4bGZhy3cJdMhNTC_9Qc0F9l-x2iFEenSnWke8hKk6EUCH50aJE6ETqH9uQ"
+API_KEY = st.secrets["API_KEY"]
 headers = {"Authorization": f"Bearer {API_KEY}"}
 
 # Manage Navigation and Update Timers
